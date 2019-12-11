@@ -29,6 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initVerticalGradientColor:(NSArray<UIColor *> *)colors;
 - (instancetype)initGradientColors:(NSArray<UIColor *> *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
 
+/// setting corner
+- (void)buttoncornerRadius:(CGFloat)radius;
+- (void)buttoncornerRadius:(CGFloat)radius roundingCorners:(UIRectCorner)rectCorner;
+- (void)buttoncornerRadii:(CGSize)cornerRadii roundingCorners:(UIRectCorner)rectCorner;
+
 @end
 
 NS_ASSUME_NONNULL_END

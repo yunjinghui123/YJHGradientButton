@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "YJHGradientButton"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A color gradient button"
   spec.homepage     = "https://github.com/yunjinghui123/YJHGradientButton"
   spec.license      = "MIT"

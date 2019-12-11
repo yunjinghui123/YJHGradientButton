@@ -23,6 +23,7 @@
 
 @implementation YJHGradientButton
 
+#pragma mark - init
 - (instancetype)initHorizontalGradientColor:(NSArray<UIColor *> *)colors {
     return [self initGradientColors:colors startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
 }
@@ -46,11 +47,14 @@
     return self;
 }
 
+#pragma mark  - set location
 - (void)setLocations:(NSArray<NSNumber *> *)locations {
     _locations = locations.copy;
     self.gradientLayer.locations = locations;
 }
 
+
+#pragma mark - draw gradient color
 - (void)drawRect:(CGRect)rect {
     self.gradientLayer.frame = rect;
     self.gradientLayer.colors = self.gradientColors;

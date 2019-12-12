@@ -18,14 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    YJHGradientButton *button = [YJHGradientButton createHorizontalGradientColor:@[UIColor.redColor, UIColor.greenColor]];
+    YJHGradientButton *button = [YJHGradientButton createVerticalGradientColors:@[UIColor.redColor, UIColor.greenColor]];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     [button setTitle:@"1" forState:UIControlStateNormal];
     [button buttoncornerRadius:30 roundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight];
     button.frame = CGRectMake(100, 100, 200, 100);
     
-    button = [[YJHGradientButton alloc] initVerticalGradientColor:@[UIColor.cyanColor, UIColor.blackColor]];
+    button = [[YJHGradientButton alloc] initVerticalGradientColors:@[UIColor.cyanColor, UIColor.blackColor]];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     button.frame = CGRectMake(100, 205, 100, 100);

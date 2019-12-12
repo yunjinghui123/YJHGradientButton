@@ -25,26 +25,28 @@
 @property (nonatomic, assign) BOOL               isCorner;
 @end
 
-@implementation YJHGradientButton
-
-#pragma mark - init
-+ (instancetype)createHorizontalGradientColor:(NSArray<UIColor *> *)colors {
-    return [[self alloc] initHorizontalGradientColor:colors];
+@implementation YJHGradientButton {
+    CGSize _contentSize;
 }
 
-+ (instancetype)createVerticalGradientColor:(NSArray<UIColor *> *)colors {
-    return [[self alloc] initVerticalGradientColor:colors];
+#pragma mark - init
++ (instancetype)createHorizontalGradientColors:(NSArray<UIColor *> *)colors {
+    return [[self alloc] initHorizontalGradientColors:colors];
+}
+
++ (instancetype)createVerticalGradientColors:(NSArray<UIColor *> *)colors {
+    return [[self alloc] initVerticalGradientColors:colors];
 }
 
 + (instancetype)createGradientColors:(NSArray<UIColor *> *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
     return [[self alloc] initGradientColors:colors startPoint:startPoint endPoint:endPoint];
 }
 
-- (instancetype)initHorizontalGradientColor:(NSArray<UIColor *> *)colors {
+- (instancetype)initHorizontalGradientColors:(NSArray<UIColor *> *)colors {
     return [self initGradientColors:colors startPoint:CGPointZero endPoint:CGPointMake(1, 0)];
 }
 
-- (instancetype)initVerticalGradientColor:(NSArray<UIColor *> *)colors {
+- (instancetype)initVerticalGradientColors:(NSArray<UIColor *> *)colors {
     return [self initGradientColors:colors startPoint:CGPointZero endPoint:CGPointMake(0, 1)];
 }
 
@@ -71,6 +73,19 @@
     self.gradientLayer.locations = locations;
 }
 
+
+- (void)setFrame:(CGRect)frame {
+    if (!CGRectEqualToRect(frame, self.frame)) {
+        [super setFrame:frame];
+        
+        _contentSize = frame.size;
+        [self invalidateIntrinsicContentSize];
+    }
+}
+
+- (CGSize)intrinsicContentSize {
+    return _contentSize;
+}
 
 #pragma mark - draw gradient color
 - (void)drawRect:(CGRect)rect {

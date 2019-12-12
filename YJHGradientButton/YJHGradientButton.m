@@ -28,6 +28,18 @@
 @implementation YJHGradientButton
 
 #pragma mark - init
++ (instancetype)createHorizontalGradientColor:(NSArray<UIColor *> *)colors {
+    return [[self alloc] initHorizontalGradientColor:colors];
+}
+
++ (instancetype)createVerticalGradientColor:(NSArray<UIColor *> *)colors {
+    return [[self alloc] initVerticalGradientColor:colors];
+}
+
++ (instancetype)createGradientColors:(NSArray<UIColor *> *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
+    return [[self alloc] initGradientColors:colors startPoint:startPoint endPoint:endPoint];
+}
+
 - (instancetype)initHorizontalGradientColor:(NSArray<UIColor *> *)colors {
     return [self initGradientColors:colors startPoint:CGPointZero endPoint:CGPointMake(1, 0)];
 }

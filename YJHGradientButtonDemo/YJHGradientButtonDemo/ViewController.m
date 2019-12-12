@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    YJHGradientButton *button = [[YJHGradientButton alloc] initHorizontalGradientColor:@[UIColor.redColor, UIColor.greenColor]];
+    YJHGradientButton *button = [YJHGradientButton createHorizontalGradientColor:@[UIColor.redColor, UIColor.greenColor]];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     [button setTitle:@"1" forState:UIControlStateNormal];

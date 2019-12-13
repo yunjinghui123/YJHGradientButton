@@ -80,6 +80,7 @@
         
         _contentSize = frame.size;
         [self invalidateIntrinsicContentSize];
+        [self setNeedsDisplay];
     }
 }
 
@@ -94,7 +95,7 @@
     self.gradientLayer.startPoint = self.startPoint;
     self.gradientLayer.endPoint = self.endPoint;
     
-    if (_isCorner) {
+    if (self.isCorner) {
         UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:self.rectCorner cornerRadii:self.cornerRadii];
         CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
         maskLayer.frame = rect;

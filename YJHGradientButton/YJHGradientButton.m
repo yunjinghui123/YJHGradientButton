@@ -73,21 +73,24 @@
     self.gradientLayer.locations = locations;
 }
 
-
 - (void)setFrame:(CGRect)frame {
-    if (!CGRectEqualToRect(frame, self.frame)) {
-        [super setFrame:frame];
-        
-        _contentSize = frame.size;
-        [self invalidateIntrinsicContentSize];
-        [self setNeedsDisplay];
-    }
+    [super setFrame:frame];
+    _contentSize = frame.size;
+    [self invalidateIntrinsicContentSize];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self setNeedsDisplay];
 }
 
 - (CGSize)intrinsicContentSize {
-    return _contentSize;
+    CGSize size = [super intrinsicContentSize];
+    if (!CGSizeEqualToSize(_contentSize, CGSizeZero)) {
+        return _contentSize;
+    }
+    return size;
 }
-
 #pragma mark - draw gradient color
 - (void)drawRect:(CGRect)rect {
     self.gradientLayer.frame = rect;

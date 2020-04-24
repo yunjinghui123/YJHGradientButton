@@ -15,6 +15,10 @@
 		1C6D59B923A0BE4200159EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D59B723A0BE4200159EDB /* LaunchScreen.storyboard */; };
 		1C6D59BC23A0BE4200159EDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59BB23A0BE4200159EDB /* main.m */; };
 		1C6D59C523A0BEA700159EDB /* YJHGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59C423A0BEA700159EDB /* YJHGradientButton.m */; };
+		1CDE9AF62452C15700C8D6D1 /* NormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AEE2452C15700C8D6D1 /* NormalController.m */; };
+		1CDE9AF72452C15700C8D6D1 /* GradientListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AF32452C15700C8D6D1 /* GradientListController.m */; };
+		1CDE9AF82452C15700C8D6D1 /* GradientObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AF42452C15700C8D6D1 /* GradientObj.m */; };
+		1CDE9AF92452C15700C8D6D1 /* GradientListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AF52452C15700C8D6D1 /* GradientListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		1C6D59BB23A0BE4200159EDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C6D59C323A0BEA700159EDB /* YJHGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHGradientButton.h; sourceTree = "<group>"; };
 		1C6D59C423A0BEA700159EDB /* YJHGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHGradientButton.m; sourceTree = "<group>"; };
+		1CDE9AED2452C15700C8D6D1 /* NormalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalController.h; sourceTree = "<group>"; };
+		1CDE9AEE2452C15700C8D6D1 /* NormalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalController.m; sourceTree = "<group>"; };
+		1CDE9AF02452C15700C8D6D1 /* GradientListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientListController.h; sourceTree = "<group>"; };
+		1CDE9AF12452C15700C8D6D1 /* GradientObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientObj.h; sourceTree = "<group>"; };
+		1CDE9AF22452C15700C8D6D1 /* GradientListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientListCell.h; sourceTree = "<group>"; };
+		1CDE9AF32452C15700C8D6D1 /* GradientListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientListController.m; sourceTree = "<group>"; };
+		1CDE9AF42452C15700C8D6D1 /* GradientObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientObj.m; sourceTree = "<group>"; };
+		1CDE9AF52452C15700C8D6D1 /* GradientListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 		1C6D59A823A0BE4000159EDB /* YJHGradientButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1CDE9ADF2452BABA00C8D6D1 /* Example */,
 				1C6D59C223A0BE8B00159EDB /* YJHGradientButton */,
 				1C6D59A923A0BE4000159EDB /* AppDelegate.h */,
 				1C6D59AA23A0BE4000159EDB /* AppDelegate.m */,
@@ -88,6 +101,37 @@
 			);
 			name = YJHGradientButton;
 			path = ../../YJHGradientButton;
+			sourceTree = "<group>";
+		};
+		1CDE9ADF2452BABA00C8D6D1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE9AEF2452C15700C8D6D1 /* List */,
+				1CDE9AEC2452C15700C8D6D1 /* Normal */,
+			);
+			path = Example;
+			sourceTree = SOURCE_ROOT;
+		};
+		1CDE9AEC2452C15700C8D6D1 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE9AED2452C15700C8D6D1 /* NormalController.h */,
+				1CDE9AEE2452C15700C8D6D1 /* NormalController.m */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		1CDE9AEF2452C15700C8D6D1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1CDE9AF02452C15700C8D6D1 /* GradientListController.h */,
+				1CDE9AF32452C15700C8D6D1 /* GradientListController.m */,
+				1CDE9AF22452C15700C8D6D1 /* GradientListCell.h */,
+				1CDE9AF52452C15700C8D6D1 /* GradientListCell.m */,
+				1CDE9AF12452C15700C8D6D1 /* GradientObj.h */,
+				1CDE9AF42452C15700C8D6D1 /* GradientObj.m */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +208,11 @@
 				1C6D59C523A0BEA700159EDB /* YJHGradientButton.m in Sources */,
 				1C6D59AB23A0BE4000159EDB /* AppDelegate.m in Sources */,
 				1C6D59BC23A0BE4200159EDB /* main.m in Sources */,
+				1CDE9AF82452C15700C8D6D1 /* GradientObj.m in Sources */,
 				1C6D59AE23A0BE4000159EDB /* SceneDelegate.m in Sources */,
+				1CDE9AF62452C15700C8D6D1 /* NormalController.m in Sources */,
+				1CDE9AF72452C15700C8D6D1 /* GradientListController.m in Sources */,
+				1CDE9AF92452C15700C8D6D1 /* GradientListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,15 +352,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TV2DAENY7E;
 				INFOPLIST_FILE = YJHGradientButtonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-432680302.qq.com.YJHGradientButtonDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1432680302.qq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Huimai_Developer_Shop;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,15 +372,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TV2DAENY7E;
 				INFOPLIST_FILE = YJHGradientButtonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-432680302.qq.com.YJHGradientButtonDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1432680302.qq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Huimai_Developer_Shop;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

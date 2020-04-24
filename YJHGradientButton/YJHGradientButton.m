@@ -15,7 +15,6 @@
 * stop. Defaults to nil. Animatable. */
 @property (nonatomic, strong) NSMutableArray  *gradientColors;
 
-@property (nonatomic, strong) NSArray<UIColor *> *colors;
 @property (nonatomic, assign) CGPoint            startPoint;
 @property (nonatomic, assign) CGPoint            endPoint;
 
@@ -52,15 +51,14 @@
 
 - (instancetype)initGradientColors:(NSArray<UIColor *> *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
     if (self = [super init]) {
+        NSAssert(colors.count > 0, @"colors is nil!!!");
         self.isCorner = NO;
-        self.colors = colors;
         self.startPoint = startPoint;
         self.endPoint = endPoint;
         [self.layer addSublayer:self.gradientLayer];
         
-        [colors enumerateObjectsUsingBlock:^(UIColor * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [self.gradientColors addObject:(__bridge id)obj.CGColor];
-        }];
+        _colors = colors;
+        [self gradientColorUIChangeToCG:colors];
         
         [self setNeedsDisplay];
     }
@@ -91,6 +89,21 @@
     }
     return size;
 }
+
+- (void)setColors:(NSArray<UIColor *> *)colors {
+    _colors = colors;
+    [self gradientColorUIChangeToCG:colors];
+    [self setNeedsDisplay];
+}
+
+
+- (void)gradientColorUIChangeToCG:(NSArray<UIColor *> *)colors {
+    [self.gradientColors removeAllObjects];
+    [colors enumerateObjectsUsingBlock:^(UIColor * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self.gradientColors addObject:(__bridge id)obj.CGColor];
+    }];
+}
+
 #pragma mark - draw gradient color
 - (void)drawRect:(CGRect)rect {
     self.gradientLayer.frame = rect;

@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YJHGradientButton : UIButton
 
-@property (nonatomic, strong, readonly) NSArray<UIColor *> *colors;
+@property (nonatomic, strong) NSArray<UIColor *> *colors;
 @property (nonatomic, assign, readonly) CGPoint startPoint;
 @property (nonatomic, assign, readonly) CGPoint endPoint;
 /// color split location

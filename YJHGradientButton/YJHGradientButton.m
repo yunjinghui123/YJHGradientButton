@@ -59,6 +59,8 @@
         
         _colors = colors;
         [self gradientColorUIChangeToCG:colors];
+        [self bringSubviewToFront:self.titleLabel];
+        [self bringSubviewToFront:self.imageView];
         
         [self setNeedsDisplay];
     }

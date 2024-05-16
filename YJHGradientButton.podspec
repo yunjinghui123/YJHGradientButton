@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "YJHGradientButton"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "A color gradient button"
   spec.homepage     = "https://github.com/yunjinghui123/YJHGradientButton"
   spec.license      = "MIT"
@@ -8,5 +8,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "6.0"
   spec.source       = { :git => "https://github.com/yunjinghui123/YJHGradientButton.git", :tag => "#{spec.version}" }
   spec.source_files  = "YJHGradientButton", "YJHGradientButton/**/*.{h,m}"
+  spec.resource_bundles = {"YJHGradientButton" => ["YJHGradientButton/**/PrivacyInfo.xcprivacy"]}
   spec.requires_arc = true
 end

@@ -15,6 +15,7 @@
 		1C6D59B923A0BE4200159EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D59B723A0BE4200159EDB /* LaunchScreen.storyboard */; };
 		1C6D59BC23A0BE4200159EDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59BB23A0BE4200159EDB /* main.m */; };
 		1C6D59C523A0BEA700159EDB /* YJHGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59C423A0BEA700159EDB /* YJHGradientButton.m */; };
+		1CCE51C92D71CC9300AD3CCF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1CCE51C72D71CC9300AD3CCF /* PrivacyInfo.xcprivacy */; };
 		1CDE9AF62452C15700C8D6D1 /* NormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AEE2452C15700C8D6D1 /* NormalController.m */; };
 		1CDE9AF72452C15700C8D6D1 /* GradientListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AF32452C15700C8D6D1 /* GradientListController.m */; };
 		1CDE9AF82452C15700C8D6D1 /* GradientObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE9AF42452C15700C8D6D1 /* GradientObj.m */; };
@@ -36,6 +37,7 @@
 		1C6D59BB23A0BE4200159EDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C6D59C323A0BEA700159EDB /* YJHGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHGradientButton.h; sourceTree = "<group>"; };
 		1C6D59C423A0BEA700159EDB /* YJHGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHGradientButton.m; sourceTree = "<group>"; };
+		1CCE51C72D71CC9300AD3CCF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1CDE9AED2452C15700C8D6D1 /* NormalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalController.h; sourceTree = "<group>"; };
 		1CDE9AEE2452C15700C8D6D1 /* NormalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalController.m; sourceTree = "<group>"; };
 		1CDE9AF02452C15700C8D6D1 /* GradientListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientListController.h; sourceTree = "<group>"; };
@@ -96,11 +98,20 @@
 		1C6D59C223A0BE8B00159EDB /* YJHGradientButton */ = {
 			isa = PBXGroup;
 			children = (
+				1CCE51C82D71CC9300AD3CCF /* Resources */,
 				1C6D59C323A0BEA700159EDB /* YJHGradientButton.h */,
 				1C6D59C423A0BEA700159EDB /* YJHGradientButton.m */,
 			);
 			name = YJHGradientButton;
 			path = ../../YJHGradientButton;
+			sourceTree = "<group>";
+		};
+		1CCE51C82D71CC9300AD3CCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CCE51C72D71CC9300AD3CCF /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1CDE9ADF2452BABA00C8D6D1 /* Example */ = {
@@ -193,6 +204,7 @@
 			files = (
 				1C6D59B923A0BE4200159EDB /* LaunchScreen.storyboard in Resources */,
 				1C6D59B623A0BE4200159EDB /* Assets.xcassets in Resources */,
+				1CCE51C92D71CC9300AD3CCF /* PrivacyInfo.xcprivacy in Resources */,
 				1C6D59B423A0BE4000159EDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

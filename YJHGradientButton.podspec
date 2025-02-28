@@ -5,9 +5,13 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/yunjinghui123/YJHGradientButton"
   spec.license      = "MIT"
   spec.author       = { "yunjinghui" => "1432680302@qq.com" }
-  spec.platform     = :ios, "6.0"
+  spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/yunjinghui123/YJHGradientButton.git", :tag => "#{spec.version}" }
-  spec.source_files  = "YJHGradientButton", "YJHGradientButton/**/*.{h,m}"
-  spec.resource_bundles = {"YJHGradientButton" => ["YJHGradientButton/**/PrivacyInfo.xcprivacy"]}
+  
+  spec.source_files  = "YJHGradientButton/**/*.{h,m}"
   spec.requires_arc = true
+  
+  s.resource_bundles = {
+    'YJHGradientButton_Privacy' => 'YJHGradientButton/Resources/PrivacyInfo.xcprivacy'
+  }
 end

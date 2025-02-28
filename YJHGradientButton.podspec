@@ -10,6 +10,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.source_files  = "YJHGradientButton/**/*.{h,m}"
   spec.resource_bundles = {
-    'YJHGradientButton_Privacy' => ['YJHGradientButton/**/Resources/PrivacyInfo.xcprivacy']
+    'YJHGradientButton' => ['YJHGradientButton/**/Resources/PrivacyInfo.xcprivacy']
   }
 end

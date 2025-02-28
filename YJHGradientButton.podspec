@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/yunjinghui123/YJHGradientButton.git", :tag => "#{spec.version}" }
   spec.requires_arc = true
-  spec.source_files  = "YJHGradientButton/**/*.{h,m}"
+  spec.source_files  = "YJHGradientButton/*.{h,m}"
   spec.resource_bundles = {'YJHGradientButton' => ['YJHGradientButton/Resources/PrivacyInfo.xcprivacy']}
 end

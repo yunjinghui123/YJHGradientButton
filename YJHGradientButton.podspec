@@ -7,11 +7,9 @@ Pod::Spec.new do |spec|
   spec.author       = { "yunjinghui" => "1432680302@qq.com" }
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/yunjinghui123/YJHGradientButton.git", :tag => "#{spec.version}" }
-  
-  spec.source_files  = "YJHGradientButton/**/*.{h,m}"
   spec.requires_arc = true
-  
-  s.resource_bundles = {
+  spec.source_files  = "YJHGradientButton/**/*.{h,m}"
+    spec.resource_bundles = {
     'YJHGradientButton_Privacy' => 'YJHGradientButton/Resources/PrivacyInfo.xcprivacy'
   }
 end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C6734C52BF5DBF8001F9203 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1C6734C42BF5DBF8001F9203 /* PrivacyInfo.xcprivacy */; };
 		1C6D59AB23A0BE4000159EDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59AA23A0BE4000159EDB /* AppDelegate.m */; };
 		1C6D59AE23A0BE4000159EDB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59AD23A0BE4000159EDB /* SceneDelegate.m */; };
 		1C6D59B123A0BE4000159EDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D59B023A0BE4000159EDB /* ViewController.m */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C6734C42BF5DBF8001F9203 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1C6D59A623A0BE4000159EDB /* YJHGradientButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJHGradientButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6D59A923A0BE4000159EDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C6D59AA23A0BE4000159EDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		1C6D59C223A0BE8B00159EDB /* YJHGradientButton */ = {
 			isa = PBXGroup;
 			children = (
-				1C6734C42BF5DBF8001F9203 /* PrivacyInfo.xcprivacy */,
 				1C6D59C323A0BEA700159EDB /* YJHGradientButton.h */,
 				1C6D59C423A0BEA700159EDB /* YJHGradientButton.m */,
 			);
@@ -196,7 +193,6 @@
 			files = (
 				1C6D59B923A0BE4200159EDB /* LaunchScreen.storyboard in Resources */,
 				1C6D59B623A0BE4200159EDB /* Assets.xcassets in Resources */,
-				1C6734C52BF5DBF8001F9203 /* PrivacyInfo.xcprivacy in Resources */,
 				1C6D59B423A0BE4000159EDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,7 +356,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TV2DAENY7E;
 				INFOPLIST_FILE = YJHGradientButtonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +376,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TV2DAENY7E;
 				INFOPLIST_FILE = YJHGradientButtonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/yunjinghui123/YJHGradientButton.git", :tag => "#{spec.version}" }
   spec.requires_arc = true
   spec.source_files  = "YJHGradientButton/**/*.{h,m}"
-    spec.resource_bundles = {
-    'YJHGradientButton_Privacy' => 'YJHGradientButton/Resources/PrivacyInfo.xcprivacy'
+  spec.resource_bundles = {
+    'YJHGradientButton_Privacy' => 'Resources/PrivacyInfo.xcprivacy'
   }
 end
